@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tech - IMDb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+        main {    
+            background-color: #ffffff;
+            color: #183C63;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* Container para os filmes ficarem lado a lado */
+        .catalogo {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Estilo de cada card de filme */
+        .filme-card {
+            background-color: #1a1a1a; /* Fundo escuro estilo IMDb */
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            width: 280px; /* Largura fixa para cada card */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .filme-card h3 {
+            color: #f5c518; /* Amarelo IMDb */
+            margin-top: 0;
+        }
+        .filme-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .filme-card figcaption {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        .filme-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>    
+</head>
+<body>
+<header>  
+    <h1>Meu blog tech</h1>
+    <p>Vou compartilhar conhecimentos sobre filmes e séries</p>
+</header>
+<main>
+    <h2>Meu primeiro post</h2>
+    <p>Por: Rafael Kerniski </p>
+    <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar informações dos filmes mais bem avaliados no IMDb.</p>
+    
+    <hr> <section class="catalogo">
+        
+        <article class="filme-card">
+            <h3>O Poderoso Chefão</h3>
+            <figure>
+                <img src="https://via.placeholder.com/280x400" alt="Pôster do filme O Poderoso Chefão">
+                <figcaption>Ano: 1972</figcaption>
+            </figure>
+            <p><strong>Sinopse:</strong> A linha tênue entre a família e o crime organizado na história de Don Corleone e seu clã.</p>
+        </article>
+
+        <article class="filme-card">
+            <h3>Batman: O Cavaleiro das Trevas</h3>
+            <figure>
+                <img src="https://via.placeholder.com/280x400" alt="Pôster do filme O Cavaleiro das Trevas">
+                <figcaption>Ano: 2008</figcaption>
+            </figure>
+            <p><strong>Sinopse:</strong> Com a ajuda de Jim Gordon e Harvey Dent, Batman mantém a ordem em Gotham até o Coringa surgir.</p>
+        </article>
+
+    </section>
+</main>
+</body>
+</html>
