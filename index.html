@@ -25,12 +25,13 @@
     }
     article{
       display: flex;
-
+      margin-bottom: 20px; /* Pequeno espaçamento entre os posts */
     }
 
     img {
       width: 80px;
       height: 80px;
+      margin-right: 15px; /* Espaço entre a imagem e o texto */
     }
 
     .artigo-autor {
@@ -46,8 +47,7 @@
   </header>
   <main>
     <article>
-    <img src="imdb2.jpeg"
-      alt="imagem capa do site imdb">
+    <img src="imdb2.jpeg" alt="imagem capa do site imdb">
     <div>
       <h2></h2>
       <p class="artigo-autor"> Por: Rafael</p>
@@ -56,32 +56,46 @@
 
          enre esses estão listadas séries como BreakingBad, Sucession e Game of Thrones.
 
-        Galeria de Mídia: Imagens, ilustrações e infográficos de alta qualidade das aeronaves em ação.
-
         Notícias e Atualizações: Fique por dentro das novidades sobre a lista doos melhores episódios e filmes da aŕea cinematográfica.</p>
       <button>👎 <span>0</span></button>
       <button>👍 <span>0</span></button>
     </div>
   </article>
+
   <article>
-    <img src="ozymandias.jpeg"
-   alt="Imagen do episódio ozymandias de breakingbad.">
-  <div>
-   <h2>Breaking Bad — "Ozymandias" (Temporada 5, Episódio 14) — Nota: 10/10</h2>
-   <p>O único episódio na história do IMDb a sustentar a nota perfeita com centenas de milhares de votos. É o ápice absoluto da queda de Walter White.</p>
-   <p class="artigo-autor"> Por: Rafael</p>
-   <p>O que você encontra aqui:
-     
+    <img src="ozymandias.jpeg" alt="Imagen do episódio ozymandias de breakingbad.">
+    <div>
+      <h2>1-Breaking Bad — "Ozymandias" (Temporada 5, Episódio 14) — Nota: 10/10</h2>
+      <p>O único episódio na história do IMDb a sustentar a nota perfeita com centenas de milhares de votos. É o ápice absoluto da queda de Walter White.</p>
+      <p class="artigo-autor"> Por: Rafael</p>
+      <button>👎 <span>0</span></button>
+      <button>👍 <span>0</span></button>
+    </div>
+  </article>
 
-    
-     Imagens de filmes e séries.
+  <article>
+    <img src="connor's wedding.jpeg" alt="Imagem do episódio do casamento de Connor ">
+    <div>
+      <h2>2-Succession — "Connor's Wedding" (Temporada 4, Episódio 3) — Nota: 9.9/10</h2>
+      <p>Um episódio tenso, gravado quase em tempo real, que mudou completamente o rumo da série e chocou os espectadores.</p>
+      <p class="artigo-autor"> Por: Rafael</p>
+      <button>👎 <span>0</span></button>
+      <button>👍 <span>0</span></button>
+    </div>
+  </article>
 
-     Notícias e Atualizações: Fique por dentro das novidades sobre filme e séries no imdb.</p>
-   <button>👎 <span>0</span></button>
-   <button>👍 <span>0</span></button>
- </div>
+  <article>
+    <img src="battle of bastards.jpeg" alt="Imagem do episódio battle of bastards">
+    <div>
+      <h2>3-Game of Thrones — "Battle of the Bastards" (Temporada 6, Episódio 9) — Nota: 9.9/10</h2>
+      <p>Considerado uma das maiores produções de batalha e ação já feitas para a televisão.</p>
+      <p class="artigo-autor"> Por: Rafael</p>
+      <p>O que você encontra aqui: Imagens de filmes e séries. Notícias e Atualizações: Fique por dentro das novidades sobre filme e séries no imdb.</p>
+      <button>👎 <span>0</span></button>
+      <button>👍 <span>0</span></button>
+    </div>
+  </article>
 
-    </article>
   </main>
 </body>
 <script>
@@ -98,7 +112,6 @@
         if (curtiu === false){
           texto.textContent++;
           curtiu = true;
-
         }
         else{
           texto.textContent--;
@@ -107,8 +120,6 @@
       }
     }
   )
-
-
 </script>
 
-</html>   
+</html>
